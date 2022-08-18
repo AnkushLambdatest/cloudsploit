@@ -1,4 +1,5 @@
 ---
+framework: mocha
 preRun:
      command:
         - npm install
