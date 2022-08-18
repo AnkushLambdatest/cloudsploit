@@ -1,0 +1,18 @@
+---
+framework: mocha
+preRun:
+     command:
+        - npm install
+        - npm run lint
+preMerge:
+  pattern:
+    - "./**/*.spec.js"
+postMerge:
+  pattern: 
+    - "./**/*.spec.js"
+postRun:
+     command:
+        - node --version
+version: 1.0.3
+parallelism: 3
+splitMode: file
